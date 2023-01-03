@@ -85,7 +85,6 @@ export default function Actions() {
 			<Text style={styles.labelButton}>Caixinhas</Text>
 		</TouchableOpacity>
 
-
 	</ScrollView>
   );
 }
@@ -114,6 +113,7 @@ const styles = StyleSheet.create({
 	labelButton: {
 		marginTop: 4,
 		textAlign: 'center',
-		fontWeight: 'bold'
+		fontWeight: 'bold',
+		fontSize: 16
 	}
 })
