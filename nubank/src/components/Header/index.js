@@ -82,7 +82,7 @@ const styles = StyleSheet.create({
 		justifyContent: 'center',
 		borderRadius: 30,
 		borderWidth: 2,
-		borderColor: '#443a53'
+		borderColor: '#6913b2'
 	},
 	buttonOptions: {
 		paddingHorizontal: 30,
