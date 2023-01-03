@@ -10,6 +10,7 @@ import {
 import { Feather } from '@expo/vector-icons';
 import { FontAwesome5 } from '@expo/vector-icons'; 
 import { FontAwesome } from '@expo/vector-icons';
+import { MaterialCommunityIcons } from '@expo/vector-icons';
 
 
 const StatusBarHeight = StatusBar.currentHeight ? StatusBar.currentHeight + 22 : 64;
@@ -18,18 +19,24 @@ export default function Header() {
 	return(
 		<View style={styles.main}>
 			<View style={styles.container}>
-				<View style={styles.content}>
+				<View style={styles.content}>				
 					<TouchableOpacity activeOpacity={0.8} style={styles.buttonUser}>
 						<Feather name="user" size={27} color='#fff'></Feather>
 					</TouchableOpacity>
 
-					<TouchableOpacity>
-						<FontAwesome5 name="eye" size={24} color="white" />
-					</TouchableOpacity>
+					<View style={styles.headerRight}>
+						<TouchableOpacity style={styles.buttonOptions}>
+							<FontAwesome5 name="eye" size={25} color="white" />
+						</TouchableOpacity>
 					
-					<TouchableOpacity>
-						<FontAwesome name="question-circle-o" size={27} color="white"></FontAwesome>
-					</TouchableOpacity>
+						<TouchableOpacity style={styles.buttonOptions}>
+							<FontAwesome name="question-circle-o" size={25} color="white"></FontAwesome>
+						</TouchableOpacity>
+
+						<TouchableOpacity style={styles.buttonOptions}>
+							<MaterialCommunityIcons name="email-plus-outline" size={25} color="white" />
+						</TouchableOpacity>
+					</View>
 				</View>
 			</View>
 			
@@ -55,12 +62,16 @@ const styles = StyleSheet.create({
 		flex: 1,
 		alignItems: 'center',
 		flexDirection: 'row',
-		justifyContent: 'space-between'
+		justifyContent: 'space-between',
+	},
+	headerRight: {
+		flexDirection: 'row',
 	},
 	username: {
 		fontSize: 18,
 		color: 'white',
-		fontWeight: 'bold'
+		fontWeight: 'bold',
+		padding: 16,
 	},
 	buttonUser: {
 		width: 44,
@@ -69,5 +80,11 @@ const styles = StyleSheet.create({
 		alignItems: 'center',
 		justifyContent: 'center',
 		borderRadius: 30
+	},
+	buttonOptions: {
+		paddingHorizontal: 30,
+		alignItems: 'center',
+		justifyContent: 'center',
+		paddingEnd: 0
 	}
 })
