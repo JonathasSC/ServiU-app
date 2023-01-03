@@ -54,8 +54,8 @@ const styles = StyleSheet.create({
 	container: {
 		paddingTop: StatusBarHeight,
 		flexDirection: 'row',
-		paddingStart: 16,
-		paddingEnd: 16,
+		paddingStart: 20,
+		paddingEnd: 20,
 		paddingBottom: 14
 	},
 	content: {
@@ -68,10 +68,11 @@ const styles = StyleSheet.create({
 		flexDirection: 'row',
 	},
 	username: {
-		fontSize: 18,
+		fontSize: 20,
 		color: 'white',
 		fontWeight: 'bold',
-		padding: 16,
+		padding: 20,
+		paddingBottom: 25
 	},
 	buttonUser: {
 		width: 44,
@@ -79,7 +80,9 @@ const styles = StyleSheet.create({
 		backgroundColor: 'rgba(255,255,255,0.3)',
 		alignItems: 'center',
 		justifyContent: 'center',
-		borderRadius: 30
+		borderRadius: 30,
+		borderWidth: 2,
+		borderColor: '#443a53'
 	},
 	buttonOptions: {
 		paddingHorizontal: 30,
