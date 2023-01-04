@@ -4,6 +4,7 @@ import { StatusBar } from 'expo-status-bar';
 import Balance from '../../components/Balance';
 import Actions from '../../components/Actions';
 import Cards from '../../components/Cards';
+import News from '../../components/News';
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
     	<Balance></Balance>
 		<Actions></Actions>
 		<Cards></Cards>
+		<News></News>
     </View>
   );
 }
