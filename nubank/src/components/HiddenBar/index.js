@@ -11,18 +11,18 @@ import {
 import { MaterialIcons } from '@expo/vector-icons'; 
 
 
-export default function Balance() {
+export default function HiddenBar() {
 	const [showvalue, setShowvalue ] = useState(false);
  	return (
    		<View style={styles.container}>
 			<TouchableOpacity>
 				<View style={styles.balanceArea}>
-					<Text style={styles.currencySymbol}>R$ </Text>
-					<Text style={styles.balance}>1.000,00</Text>
+					<Text style={styles.currencySymbol}>R$</Text>
+					<Text style={styles.hiddenBar}></Text>
 				</View>
 			</TouchableOpacity>
 		</View>
-  );
+	);
 }
 
 const styles = StyleSheet.create({

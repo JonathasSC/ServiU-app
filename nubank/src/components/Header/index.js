@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { 
 	View, 
 	StyleSheet, 
@@ -12,10 +12,15 @@ import { FontAwesome5 } from '@expo/vector-icons';
 import { FontAwesome } from '@expo/vector-icons';
 import { MaterialCommunityIcons } from '@expo/vector-icons';
 
+import AccountMore from "../../components/AccountMore";
+import HiddenBar from "../HiddenBar";
+import Balance from "../Balance";
 
-const StatusBarHeight = StatusBar.currentHeight ? StatusBar.currentHeight + 22 : 64;
+
+const StatusBarHeight = StatusBar.currentHeight ? StatusBar.currentHeight + 10 : 64;
 
 export default function Header() {
+	const [showvalue, setShowvalue] = useState(false)
 	return(
 		<View style={styles.main}>
 			<View style={styles.container}>
@@ -25,10 +30,16 @@ export default function Header() {
 					</TouchableOpacity>
 
 					<View style={styles.headerRight}>
-						<TouchableOpacity style={styles.buttonOptions}>
-							<FontAwesome5 name="eye" size={25} color="white" />
-						</TouchableOpacity>
-					
+						{ showvalue ? ( 
+							<TouchableOpacity style={styles.buttonOptions} onPress={()=> setShowvalue(!showvalue)}>
+								<FontAwesome5 name="eye" size={25} color="white" />
+							</TouchableOpacity>
+						) : (
+							<TouchableOpacity style={styles.buttonOptions} onPress={()=> setShowvalue(!showvalue)}>
+								<FontAwesome5 name="eye-slash" size={25} color="white" />
+							</TouchableOpacity>
+						)}
+
 						<TouchableOpacity style={styles.buttonOptions}>
 							<FontAwesome name="question-circle-o" size={25} color="white"></FontAwesome>
 						</TouchableOpacity>
@@ -41,13 +52,26 @@ export default function Header() {
 			</View>
 			
 			<View>
-				<Text style={styles.username}>Jonathas Santos</Text>
+				<Text style={styles.username}>Olá, Jonathas</Text>
 			</View>
+
+			<View style={styles.accountArea}>
+				<AccountMore></AccountMore>
+			</View>
+
+			{ showvalue ? (
+				<Balance></Balance>
+			) : (
+				<HiddenBar></HiddenBar>
+			)}
 		</View>
 	)
 }
 
 const styles = StyleSheet.create({
+	accountArea: {
+		backgroundColor: '#fff',
+	},
 	main: {
 		backgroundColor: '#820ad1',
 	},
@@ -80,9 +104,7 @@ const styles = StyleSheet.create({
 		backgroundColor: 'rgba(255,255,255,0.3)',
 		alignItems: 'center',
 		justifyContent: 'center',
-		borderRadius: 30,
-		borderWidth: 2,
-		borderColor: '#6913b2'
+		borderRadius: 30
 	},
 	buttonOptions: {
 		paddingHorizontal: 30,
