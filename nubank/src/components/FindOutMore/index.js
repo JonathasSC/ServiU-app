@@ -92,8 +92,6 @@ const styles = StyleSheet.create({
 	ItemScroll: {
 		marginHorizontal: 20,
 		flexDirection: 'column',
-		backgroundColor: '#f0f1f5',
-		borderRadius: 15,
 	},
 	titleScrollItem: {
 		fontWeight: 'bold',
