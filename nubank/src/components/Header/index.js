@@ -15,6 +15,7 @@ import { MaterialCommunityIcons } from '@expo/vector-icons';
 import AccountMore from "../../components/AccountMore";
 import HiddenBar from "../HiddenBar";
 import Balance from "../Balance";
+import InvoiceData from "../InvoiceData";
 
 
 const StatusBarHeight = StatusBar.currentHeight ? StatusBar.currentHeight + 10 : 64;
@@ -64,6 +65,7 @@ export default function Header() {
 			) : (
 				<HiddenBar></HiddenBar>
 			)}
+
 		</View>
 	)
 }

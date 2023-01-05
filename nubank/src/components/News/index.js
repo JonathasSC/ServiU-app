@@ -9,28 +9,19 @@ import {
 } from "react-native";
 
 import { Linking } from 'react-native';
-import NewsCard from '../NewsCard';
 
 export default function News() {
 	return (
 		<ScrollView style={styles.container} horizontal={true} showsHorizontalScrollIndicator={false}>
 
-			<TouchableOpacity style={styles.Items} onPress= {() => Linking.openURL('https://www.google.com')}>
+			<TouchableOpacity style={styles.Items} onPress= {() => Linking.openURL('http://localhost')}>
 				<View style={styles.Item}>
 					<Text style={styles.cardLabel}>Concorra a prêmios com o</Text>
 					<Text style={styles.cardLabel}>Nubank Vida apartir de R$...</Text>
 				</View>
 			</TouchableOpacity>
 
-			<TouchableOpacity style={styles.Items}>
-				<View style={styles.Item}>
-					<Text style={styles.cardLabelPurple}>Convide amigos para o nubank 
-						<Text style={styles.cardLabel}> e desbloqueie ...</Text>
-					</Text>
-				</View>
-			</TouchableOpacity>
-
-			<TouchableOpacity style={styles.Items}>
+			<TouchableOpacity style={styles.Items} onPress= {() => Linking.openURL('http://localhost')}>
 				<View style={styles.Item}>
 					<Text style={styles.cardLabelPurple}>Convide amigos para o nubank 
 						<Text style={styles.cardLabel}> e desbloqueie ...</Text>
