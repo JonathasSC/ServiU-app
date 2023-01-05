@@ -10,7 +10,7 @@ import {
 export default function DebitOption() {
 	const [activate, setActivate] = useState(true)
 	return (
-	<View>
+	<View style={styles.creditCardArea}>
 		<View style={styles.invoiceInfos}>
 			<Text style={styles.invoiceLabel}>Limite disponível de R$</Text>
 			<Text style={styles.invoiceValue}> 3,90</Text>
@@ -70,6 +70,6 @@ const styles = StyleSheet.create({
 	},
 	debitArea: {
 		flexDirection: 'row',
-		alignContent: 'center'
+		alignContent: 'center',
 	},
 })

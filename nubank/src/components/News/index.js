@@ -34,6 +34,9 @@ export default function News() {
 }
 
 const styles = StyleSheet.create({
+	container: {
+		marginBottom: 8
+	},
 	Items: {
 		marginTop: 25,
 		width: 260,

@@ -17,6 +17,8 @@ import News from '../../components/News';
 import CardView from "../../components/CardView";
 import HiddenBar from "../../components/HiddenBar";
 import InvoiceData from "../../components/InvoiceData";
+import ClientSessions from "../../components/ClientSessions";
+import FindOutMore from "../../components/FindOutMore";
 
 export default function Home() {
 	const [showvalue, setShowvalue ] = useState(false);
@@ -30,6 +32,8 @@ export default function Home() {
 				<News></News>
 				<CardView></CardView>
 				<InvoiceData></InvoiceData>
+				<ClientSessions></ClientSessions>
+				<FindOutMore></FindOutMore>
 			</View>
 		</ScrollView>
  	);
