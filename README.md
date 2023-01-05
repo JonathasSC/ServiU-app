@@ -81,8 +81,40 @@ Também é possivel ver um botão de parcelar as compras.
 ![gif3](/assets/CreditCard.gif)
 
 ---
+#### Acompanhe também:
+Em seguida havéra a área para assistencia do cliente, com a opção de Assistente de pagamento, função nova no app indicado pela tarja "novo".
+
+&nbsp;
+
+![gif3](/assets/AlsoFollow.gif)
+
+---
+#### Acompanhe também:
+Em seguida havéra a área para assistencia do cliente, com a opção de Assistente de pagamento, função nova no app indicado pela tarja "novo".
+
+&nbsp;
+
+![gif3](/assets/AlsoFollow.gif)
+
+---
+#### Acompanhe também:
+Continuando descendo, chegamos na sessões do cliente, onde vemos os serviços "Empréstimos e Seguro de vida".
+
+&nbsp;
+
+![gif3](/assets/ClientSessions.gif)
+
+---
+#### Acompanhe também:
+E no final, temos outras funções de compartilhamento e divulgação de funções do app.
+
+&nbsp;
+
+![gif3](/assets/FindOutMore.gif)
+
+---
 <div align='center'>
 	<h6>Créditos Abaixo</h6>
 </div>
 
-Nubank: nubank.com.br
+[Nubank](nubank.com.br)
