@@ -12,6 +12,7 @@ import { FontAwesome5 } from '@expo/vector-icons';
 import { FontAwesome } from '@expo/vector-icons';
 import { MaterialCommunityIcons } from '@expo/vector-icons';
 
+
 import AccountMore from "../../components/AccountMore";
 import HiddenBar from "../HiddenBar";
 import Balance from "../Balance";
