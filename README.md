@@ -117,4 +117,4 @@ E no final, temos outras funções de compartilhamento e divulgação de funçõ
 	<h6>Créditos Abaixo</h6>
 </div>
 
-nubank.com.br
+<a href='nubank.com.br'>Nubank</a>
