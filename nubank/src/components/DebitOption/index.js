@@ -29,6 +29,9 @@ export default function DebitOption() {
 				</TouchableOpacity>
 			)}
 		</View>
+		<TouchableOpacity style={styles.payInInstallmentsArea} >
+			<Text style={styles.payInInstallmentsLabel}>Parcelar Compras</Text>
+		</TouchableOpacity>
 	</View>
 	
   );
@@ -72,4 +75,18 @@ const styles = StyleSheet.create({
 		flexDirection: 'row',
 		alignContent: 'center',
 	},
+	payInInstallmentsArea: {
+		backgroundColor: '#f0f1f5',
+		height: 35,
+		width: 155,
+		alignContent: 'center',
+		justifyContent: 'center',
+		alignItems: 'center',
+		borderRadius: 30,
+		marginTop: 20
+	},
+	payInInstallmentsLabel: {
+		fontWeight: 'bold',
+		fontSize: 16,
+	}
 })
