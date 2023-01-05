@@ -19,6 +19,8 @@ import HiddenBar from "../../components/HiddenBar";
 import InvoiceData from "../../components/InvoiceData";
 import ClientSessions from "../../components/ClientSessions";
 import FindOutMore from "../../components/FindOutMore";
+import AlsoFollow from "../../components/AlsoFollow";
+import Footer from "../../components/Footer";
 
 export default function Home() {
 	const [showvalue, setShowvalue ] = useState(false);
@@ -32,8 +34,10 @@ export default function Home() {
 				<News></News>
 				<CardView></CardView>
 				<InvoiceData></InvoiceData>
+				<AlsoFollow></AlsoFollow>
 				<ClientSessions></ClientSessions>
 				<FindOutMore></FindOutMore>
+				<Footer></Footer>
 			</View>
 		</ScrollView>
  	);
