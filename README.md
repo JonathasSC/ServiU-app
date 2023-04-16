@@ -2,7 +2,7 @@
 <img  src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Nubank_logo_2021.svg/2560px-Nubank_logo_2021.svg.png" style="
 width: 250px;">
 
-# Nubank - Clone Interface
+# React Native - Nubank
 
 #### Projeto feito em React Native como forma de estudo.
 </div>
