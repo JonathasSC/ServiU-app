@@ -3,13 +3,9 @@ import {
 	View, 
 	StyleSheet, 
 	Text, 
-	StatusBar, 
 	TouchableOpacity,
-	ScrollView
 } from "react-native";
 
-import { MaterialIcons } from '@expo/vector-icons';
-import { Octicons } from '@expo/vector-icons';  
 import { FontAwesome5 } from '@expo/vector-icons';
 
 

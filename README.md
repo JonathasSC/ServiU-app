@@ -108,9 +108,58 @@ Continuando descendo, chegamos na sessões do cliente, onde vemos os serviços "
 #### Acompanhe também:
 E no final, temos outras funções de compartilhamento e divulgação de funções do app.
 
-&nbsp;
 
 ![gif3](/assets/FindOutMore.gif)
+
+---
+
+#### Como executar em seu ambiente
+##### 1. Certifique de ter as dependencias necessárias.
+
+É necessario ter os seguintes softwares:
+
+1. Git
+2. Expo
+3. NodeJS 
+4. React Native
+5. Android Studio/Expo Go 
+6. Visual Studio Code ou Semelhante
+
+##### 2. Clone esse repositorio
+
+Para clonar esse répositorio, basta abrir um terminal em uma pasta desejada e executar o comando:
+
+```git clone https://github.com/JonathasSC/react-native-nubank```
+
+##### 3. Abra o repositorio dentro do VS code
+
+Abra o repositorio dentro do Visual Studio Code ou seu editor de preferencia, logo após abra um terminal e digite o comando:
+
+```cd nubank```
+
+##### 4. Configure e abra um dispositivo.
+
+Caso voce queira usar seu proprio dispositivo paravisualizar o projeto, baixe o aplicativo disponibilizado pela Expo:
+
+Google Play: 
+https://play.google.com/store/apps/details?id=host.exp.exponent
+
+App Store:
+https://apps.apple.com/br/app/expo-go/id982107779
+
+
+Caso queira emular um dispositivo android dentro do seu ambiente, siga esse tutorial usando o Android Studio
+
+https://developer.android.com/studio/run/managing-avds?hl=pt-br
+
+é importante ressaltar que você também terá que baixar o Expo dentro do dispositivo emulado.
+
+
+##### 5. Execute o projeto:
+
+Após deixar o dispositivo android totalmente preparado volte para o editor de código, dentro do terminal anterior e execute:
+
+```npx expo start```
 
 ---
 <div align='center'>

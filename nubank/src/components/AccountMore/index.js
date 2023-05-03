@@ -3,9 +3,7 @@ import {
 	View, 
 	StyleSheet, 
 	Text, 
-	StatusBar, 
 	TouchableOpacity,
-	ScrollView
 } from "react-native";
 
 import { MaterialIcons } from '@expo/vector-icons'; 

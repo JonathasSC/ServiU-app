@@ -28,8 +28,8 @@ export default function Routes() {
 				name="inicio"
 				component={Home}
 				options={{
-					tabBarIcon: ({size, color}) => (
-						<MaterialCommunityIcons name="swap-vertical-bold" size={size} color={color} />
+					tabBarIcon: ({color}) => (
+						<MaterialCommunityIcons name="swap-vertical-bold" size={26} color={color} />
 					),
 					tabBarLabel:'',
 				}}
@@ -39,7 +39,7 @@ export default function Routes() {
 				name="Acompanhe seu dinheiro" 
 				component={TrackYourMoney}
 				options={{
-					tabBarIcon: ({size, color}) => (
+					tabBarIcon: ({color}) => (
 						<MaterialIcons name="attach-money" size={28} color={color}/>
 					),
 					tabBarLabel: '',
@@ -49,7 +49,7 @@ export default function Routes() {
 				name="Compras" 
 				component={Shopping}
 				options={{
-					tabBarIcon: ({size, color}) => (
+					tabBarIcon: ({color}) => (
 						<Feather name="shopping-bag" size={24} color={color} />
 					),
 					tabBarLabel: '',
