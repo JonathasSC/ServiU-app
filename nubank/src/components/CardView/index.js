@@ -8,14 +8,15 @@ import {
 	ScrollView
 } from "react-native";
 
+import TitleAreas from '../TitleAreas';
+
 import { MaterialIcons } from '@expo/vector-icons'; 
 
 export default function CardView() {
  return (
 	<TouchableOpacity style={styles.container}>
 		<View style={styles.title}>
-			<Text style={styles.itemTitle}>Cartão de crédito</Text>
-			<MaterialIcons style={styles.viewMore} name="arrow-forward-ios" size={18} color="gray" />
+            <TitleAreas name="Cartão de crédito" arrow={true} />
 		</View>
 	</TouchableOpacity>
   );
@@ -26,20 +27,5 @@ const styles = StyleSheet.create({
 		borderTopWidth: 2,
 		borderColor: '#f2f2f2',
 		marginTop: 25,
-		padding: 20,
-		backgroundColor: '#fff',
 	},
-	itemTitle: {
-		fontSize: 22,
-		fontWeight: 'bold'
-	},
-	title: {
-		flexDirection:'row',
-		alignContent: 'center',
-		alignItems: 'center',
-		justifyContent: 'space-between',
-	},
-	viewMore: {
-		paddingEnd: 10
-	},	
 })

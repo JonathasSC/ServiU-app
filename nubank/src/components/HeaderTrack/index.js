@@ -11,18 +11,16 @@ import { Feather } from '@expo/vector-icons';
 import { FontAwesome5 } from '@expo/vector-icons'; 
 import { FontAwesome } from '@expo/vector-icons';
 import { MaterialCommunityIcons } from '@expo/vector-icons';
+import TitleAreas from "../TitleAreas";
 
-
-import AccountMore from "../../components/AccountMore";
+import TrackYourMoney from "../TrackYourMoney";
 import HiddenBar from "../HiddenBar";
 import Balance from "../Balance";
 import InvoiceData from "../InvoiceData";
 
-import TitleAreas from "../TitleAreas";
-
 const StatusBarHeight = StatusBar.currentHeight ? StatusBar.currentHeight + 10 : 64;
 
-export default function Header() {
+export default function HeaderTrack() {
 	const [showvalue, setShowvalue] = useState(false)
 	return(
 		<View style={styles.main}>
@@ -53,21 +51,11 @@ export default function Header() {
 					</View>
 				</View>
 			</View>
-			
-			<View>
-				<Text style={styles.username}>Olá, Jonathas</Text>
-			</View>
 
 			<View style={styles.accountArea}>
-                <TitleAreas name="Conta" arrow={true} />
+                <TitleAreas name="Acompanhe seu dinheiro" arrow={false}></TitleAreas>
 			</View>
-
-			{ showvalue ? (
-				<Balance></Balance>
-			) : (
-				<HiddenBar></HiddenBar>
-			)}
-
+            
 		</View>
 	)
 }
