@@ -12,6 +12,7 @@ import HeaderTrack from "../../components/HeaderTrack";
 import Footer from "../../components/Footer";
 import TrackYourMoney from "../../components/TrackYourMoney";
 import Safe from "../../components/Safe";
+import Line from "../../components/Line";
 
 export default function Home() {
 	const [showvalue, setShowvalue ] = useState(false);
@@ -21,6 +22,7 @@ export default function Home() {
 				<StatusBar style="auto"/>
 				<HeaderTrack/>
                 <TrackYourMoney/>
+                <Line/>
                 <Safe/>
 				<Footer/>
 			</View>

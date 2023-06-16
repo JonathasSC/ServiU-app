@@ -19,7 +19,7 @@ export default function TrackYourMoney() {
             <FunctionCard iconName="light-bulb" name="Investimentos" money={true}  moneyValue={"545,23"} />
         </View>
 
-        <View style={styles.card}>
+        <View>
             <FunctionCard iconName="globe" name="Cripto" money={true}  moneyValue={"366,6"} />
         </View>
     </View>
@@ -27,10 +27,6 @@ export default function TrackYourMoney() {
 }
 
 const styles = StyleSheet.create({
-    container: {
-        borderBottomColor: '#dadada',
-        borderBottomWidth: 1
-    },
     card: {
         paddingBottom: 15
     }

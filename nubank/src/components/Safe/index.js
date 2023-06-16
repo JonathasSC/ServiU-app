@@ -19,7 +19,7 @@ export default function Safe() {
             <FunctionCard iconName="device-mobile" name="Seguro de celular" />
         </View>
 
-        <View style={styles.card}>
+        <View>
             <FunctionCard iconName="light-bulb" name="Investimentos"/>
         </View>
     </View>
@@ -27,10 +27,6 @@ export default function Safe() {
 }
 
 const styles = StyleSheet.create({
-    container: {
-        borderBottomColor: '#dadada',
-        borderBottomWidth: 1
-    },
     card: {
         paddingBottom: 15
     }

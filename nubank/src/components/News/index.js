@@ -1,32 +1,26 @@
-import React, { ReactNode } from 'react';
+import React from 'react';
 import { 
-	View, 
 	StyleSheet, 
-	Text, 
-	StatusBar, 
-	TouchableOpacity,
 	ScrollView
 } from "react-native";
 
-import { Linking } from 'react-native';
 
-export default function News({description}) {
+import NewsCard from '../newsCard';
+
+export default function News() {
 	return (
 		<ScrollView style={styles.container} horizontal={true} showsHorizontalScrollIndicator={false}>
 
-			<TouchableOpacity style={styles.Items} onPress= {() => Linking.openURL('http://localhost')}>
-				<View style={styles.Item}>
-					<Text style={styles.cardLabel}>{description}</Text>
-				</View>
-			</TouchableOpacity>
+            <NewsCard 
+                description="Concorra a prêmios
+                com o Nubank Vida apartir de R$..." 
+                url="http://localhost"/>
 
-			<TouchableOpacity style={styles.Items} onPress= {() => Linking.openURL('http://localhost')}>
-				<View style={styles.Item}>
-					<Text style={styles.cardLabelPurple}>Convide amigos para o nubank 
-						<Text style={styles.cardLabel}> e desbloqueie ...</Text>
-					</Text>
-				</View>
-			</TouchableOpacity>
+            <NewsCard 
+                purpleDescription="Convide amigos para o nubank"
+                description="e desbloqueie..." 
+                url="http://localhost"
+                purpleActive={true} />
 
 		</ScrollView>
  	);
@@ -34,29 +28,7 @@ export default function News({description}) {
 
 const styles = StyleSheet.create({
 	container: {
-		marginBottom: 8
+		marginBottom: 8,
+        marginTop: 25,
 	},
-	Items: {
-		marginTop: 25,
-		width: 260,
-		marginRight: 20,
-		marginLeft: 20,
-		paddingVertical: 15,
-		flexDirection: 'row',
-		backgroundColor: '#f0f1f5',
-		borderRadius: 15,
-	},
-	Item: {
-		marginHorizontal: 20,
-		flexDirection: 'column',
-		backgroundColor: '#f0f1f5',
-		borderRadius: 15,
-	},
-	cardLabelPurple: {
-		color: "#6e1f9f"
-	},
-	cardLabel: {
-		color: "black"
-	} 
-
 })

@@ -3,38 +3,40 @@ import {
 	View, 
 	StyleSheet, 
 	Text, 
-	StatusBar, 
 	TouchableOpacity,
-	ScrollView
 } from "react-native";
 
+import TitleAreas from '../TitleAreas';
 import DebitOption from '../DebitOption';
 
 export default function InvoiceData() {
 	const [showvalue, setShowvalue] = useState(false)
 
  	return (
-	<View style={styles.container}>
-		<Text style={styles.invoiceLabel}>Fatura atual</Text>
-		<View style={styles.invoiceArea}>
-			{ showvalue ? (
-				<TouchableOpacity onPress={()=> setShowvalue(!showvalue)}>
-					<View style={styles.invoiceValueArea}>
-						<Text style={styles.currencySymbol}>R$ </Text>
-						<Text style={styles.balance}>382,75</Text>
-					</View>
-				</TouchableOpacity>
-			) : (
-				<TouchableOpacity onPress={()=> setShowvalue(!showvalue)}>
-					<View style={styles.invoiceValueArea}>
-						<Text style={styles.currencySymbol}>R$</Text>
-						<Text style={styles.hiddenBar}></Text>
-					</View>
-				</TouchableOpacity>
-			)}
-		</View>
-		<DebitOption></DebitOption>
-	</View>
+    <View>
+        <TitleAreas name="Cartão de crédito" arrow={true} />
+        <View style={styles.container}>
+            <Text style={styles.invoiceLabel}>Fatura atual</Text>
+            <View style={styles.invoiceArea}>
+                { showvalue ? (
+                    <TouchableOpacity onPress={()=> setShowvalue(!showvalue)}>
+                        <View style={styles.invoiceValueArea}>
+                            <Text style={styles.currencySymbol}>R$ </Text>
+                            <Text style={styles.balance}>382,75</Text>
+                        </View>
+                    </TouchableOpacity>
+                ) : (
+                    <TouchableOpacity onPress={()=> setShowvalue(!showvalue)}>
+                        <View style={styles.invoiceValueArea}>
+                            <Text style={styles.currencySymbol}>R$</Text>
+                            <Text style={styles.hiddenBar}></Text>
+                        </View>
+                    </TouchableOpacity>
+                )}
+            </View>
+            <DebitOption></DebitOption>
+        </View>
+    </View>
   );
 }
 

@@ -37,9 +37,7 @@ export default function Home() {
                     iconName="credit-card"
                     name="Meus cartões"/>
 				<News/>
-				<CardView/>
 				<InvoiceData/>
-				<AlsoFollow/>
 				<ClientSessions/>
 				<Footer/>
 			</View>
