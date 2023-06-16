@@ -26,16 +26,10 @@ export default function Home() {
 	return (
 		<ScrollView>
 			<View style={styles.container}>
-				<StatusBar style="auto"></StatusBar>
-				<HeaderTrack />
-                <TrackYourMoney></TrackYourMoney>
-				<News></News>
-				<CardView></CardView>
-				<InvoiceData></InvoiceData>
-				<AlsoFollow></AlsoFollow>
-				<ClientSessions></ClientSessions>
-				<FindOutMore></FindOutMore>
-				<Footer></Footer>
+				<StatusBar style="auto"/>
+				<HeaderTrack/>
+                <TrackYourMoney/>
+				<Footer/>
 			</View>
 		</ScrollView>
  	);

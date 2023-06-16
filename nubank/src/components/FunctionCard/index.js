@@ -12,15 +12,25 @@ import { Ionicons } from '@expo/vector-icons';
 import { MaterialIcons } from '@expo/vector-icons';
 import { Octicons } from '@expo/vector-icons';  
 
-export default function FunctionCard({iconName, name, status}) {
+export default function FunctionCard({iconName, name, status, money, moneyValue}) {
  return (
 	<TouchableOpacity>
 		<View style={styles.container}>
 			<Octicons style={styles.cardIcon} name={iconName} size={24} color="black"/>
             <Text style={styles.cardLabel}>{name}</Text>
             { status ? (
-                <View style={styles.assistanceNewLabelArea}>
-                    <Text style={styles.assistanceNewLabel}>Novo</Text>
+                <View style={styles.statusArea}>
+                    <Text style={styles.status}>Novo</Text>
+                </View>
+            ) : (
+                null
+            )}
+
+            <View style={styles.space}></View>
+
+            { money ? (
+                <View style={styles.valueArea}>
+                    <Text style={styles.value}>R$ {moneyValue}</Text>
                 </View>
             ) : (
                 null
@@ -47,7 +57,7 @@ const styles = StyleSheet.create({
 		textAlign: 'center',
 		fontWeight: 'bold'
 	},
-    assistanceNewLabelArea: {
+    statusArea: {
 		backgroundColor: '#820ad1',
 		paddingHorizontal: 4,
 		borderRadius: 4,
@@ -56,7 +66,18 @@ const styles = StyleSheet.create({
 		marginStart: 130,
 		alignItems: 'center'
 	},
-	assistanceNewLabel: {
+	status: {
 		color: 'white',
-	}
+	},
+    valueArea: {
+		paddingHorizontal: 15,
+		borderRadius: 4,
+	},
+	value: {
+        fontWeight: 'bold',
+        fontSize: 16,
+	},
+    space:  {
+        flex: 1
+    }
 })

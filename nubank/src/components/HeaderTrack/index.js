@@ -50,12 +50,7 @@ export default function HeaderTrack() {
 						</TouchableOpacity>
 					</View>
 				</View>
-			</View>
-
-			<View style={styles.accountArea}>
-                <TitleAreas name="Acompanhe seu dinheiro" arrow={false}></TitleAreas>
-			</View>
-            
+			</View>            
 		</View>
 	)
 }
