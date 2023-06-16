@@ -7,20 +7,20 @@ import {
 import FunctionCard from '../FunctionCard';
 import TitleAreas from '../TitleAreas';
 
-export default function TrackYourMoney() {
+export default function Safe() {
  return (
     <View style={[styles.container]}>
-        <TitleAreas name="Acompanhe seu dinheiro" arrow={false}/>
+        <TitleAreas name="Seguros" arrow={false}/>
         <View style={styles.card}>
-            <FunctionCard iconName="archive" name="Caixinhas" money={true} moneyValue={"43,4"}/>
+            <FunctionCard iconName="heart" name="Seguro de vida"/>
         </View>
 
         <View style={styles.card}>
-            <FunctionCard iconName="light-bulb" name="Investimentos" money={true}  moneyValue={"545,23"} />
+            <FunctionCard iconName="device-mobile" name="Seguro de celular" />
         </View>
 
         <View style={styles.card}>
-            <FunctionCard iconName="globe" name="Cripto" money={true}  moneyValue={"366,6"} />
+            <FunctionCard iconName="light-bulb" name="Investimentos"/>
         </View>
     </View>
   );
