@@ -41,7 +41,6 @@ export default function Home() {
 				<InvoiceData/>
 				<AlsoFollow/>
 				<ClientSessions/>
-				<FindOutMore/>
 				<Footer/>
 			</View>
 		</ScrollView>

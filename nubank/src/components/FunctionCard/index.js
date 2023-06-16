@@ -58,17 +58,19 @@ const styles = StyleSheet.create({
 	cardLabel: {
 		fontSize: 16,
 		textAlign: 'center',
-		fontWeight: 'bold'
+		fontWeight: 'bold',
+        width: 150,
+        textAlign: 'left',
 	},
     statusArea: {
 		backgroundColor: '#820ad1',
-		paddingHorizontal: 5,
+		paddingHorizontal: 4,
 		borderRadius: 4,
+    	marginStart: 60,
 	},
 	status: {
 		color: 'white',
 	},
-
     valueArea: {
 		paddingHorizontal: 15,
 		borderRadius: 4,

@@ -10,71 +10,55 @@ import {
 
 import { MaterialIcons } from '@expo/vector-icons'; 
 
+import TitleAreas from '../TitleAreas';
+import FindOutMoreCard from '../FindOutMoreCard';
+
 
 export default function ClientSessions() {
 	return (
-		<View TouchableOpacity style={styles.containerGlobal}>
-			<TouchableOpacity style={styles.container}>
-				<View style={styles.title}>
-					<Text style={styles.itemTitle}>Empréstimos</Text>
-					<MaterialIcons style={styles.viewMore} name="arrow-forward-ios" size={18} color="gray" />
-				</View>
-			</TouchableOpacity>
+		<View TouchableOpacity style={styles.container}>
+            <TitleAreas name="Empréstimos" arrow={true} />
 			<View style={styles.loanInfos}>
-				<Text style={styles.loanLabel}>Até R$ 8.000,00 disponível para você</Text>
+				<Text style={styles.description}>Até R$ 8.000,00 disponível para você</Text>
 			</View>
 
-			<TouchableOpacity style={styles.container}>
-				<View style={styles.title}>
-					<Text style={styles.itemTitle}>Seguro de vida</Text>
-					<MaterialIcons style={styles.viewMore} name="arrow-forward-ios" size={18} color="gray" />
-				</View>
-			</TouchableOpacity>
-			<View style={styles.loanInfos}>
-				<Text style={styles.loanLabel}>Um seguro completo e que cabe no bolso</Text>
-			</View>
+            <TitleAreas name="Seguro de vida" arrow={true} />
+            <Text style={styles.description}>Um seguro completo e que cabe no bolso</Text>
+
+            <TitleAreas name="Descubra Mais" arrow={true} />
+
+            <ScrollView 
+                style={styles.containerScroll} 
+                horizontal={true} 
+                showsHorizontalScrollIndicator={false}>
+
+                <FindOutMoreCard 
+                    title="Convidar amigos" 
+                    description="Tire seus amigos da fila do banco e livre eles da burocracia"
+                    url="http://localhost"/>
+
+                <FindOutMoreCard 
+                    title="Função débito" 
+                    description="Você no controle das suas compras do dia a dia de um jeito fácil e transparente"
+                    url="http://localhost"/>
+
+            </ScrollView>
 		</View>
 	);
 }
 
 
 const styles = StyleSheet.create({
-	containerGlobal: {
+	container: {
 		paddingBottom: 5
 	},
-	loanLabel: {
+	description: {
 		fontWeight: 'bold',
 		fontSize: 16,
-		color: '#7a797b'
-	},
-	debitOptionLabel: {
-		fontWeight: 'bold',
-		fontSize: 16,
-		color: '#7a797b'
-	},
-	loanInfos: {
-		flexDirection: 'row',
+		color: '#7a797b',
+        flexDirection: 'row',
 		paddingHorizontal: 20,
 		paddingBottom: 20
 	},
-	container: {
-		borderTopWidth: 2,
-		borderColor: '#f2f2f2',
-		marginTop: 8,
-		padding: 20,
-		backgroundColor: '#fff',
-	},
-	itemTitle: {
-		fontSize: 22,
-		fontWeight: 'bold'
-	},
-	title: {
-		flexDirection:'row',
-		alignContent: 'center',
-		alignItems: 'center',
-		justifyContent: 'space-between',
-	},
-	viewMore: {
-		paddingEnd: 10
-	},
+    
 })

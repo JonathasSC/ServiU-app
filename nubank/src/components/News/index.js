@@ -10,14 +10,13 @@ import {
 
 import { Linking } from 'react-native';
 
-export default function News() {
+export default function News({description}) {
 	return (
 		<ScrollView style={styles.container} horizontal={true} showsHorizontalScrollIndicator={false}>
 
 			<TouchableOpacity style={styles.Items} onPress= {() => Linking.openURL('http://localhost')}>
 				<View style={styles.Item}>
-					<Text style={styles.cardLabel}>Concorra a prêmios com o</Text>
-					<Text style={styles.cardLabel}>Nubank Vida apartir de R$...</Text>
+					<Text style={styles.cardLabel}>{description}</Text>
 				</View>
 			</TouchableOpacity>
 

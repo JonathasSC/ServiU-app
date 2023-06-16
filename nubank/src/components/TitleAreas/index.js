@@ -39,4 +39,7 @@ const styles = StyleSheet.create({
 		alignItems: 'center',
         flexDirection:'row',
 	},
+    viewMore: {
+        marginRight: 10
+    }
 })
