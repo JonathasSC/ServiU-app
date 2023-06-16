@@ -27,12 +27,11 @@ export default function HiddenBar() {
 
 const styles = StyleSheet.create({
 	container: {
-		paddingTop: 5,
-		padding: 20,
+        padding: 20,
+		paddingTop: 0,
 		backgroundColor: '#fff',
 	},
 	balanceArea: {
-		paddingVertical: 10,
 		flexDirection: 'row'
 	},
 	currencySymbol: {

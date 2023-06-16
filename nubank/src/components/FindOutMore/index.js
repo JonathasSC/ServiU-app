@@ -37,7 +37,6 @@ export default function FindOutMore() {
 				<View style={styles.ItemScroll}>
 					<Text style={styles.titleScrollItem}>Função débito</Text>
 					<Text style={styles.cardLabel}>Você no controle das suas compras do dia a dia de um jeito fácil e transparente</Text> 
-				
 
 					<TouchableOpacity style={styles.buttonScroll} onPress= {() => Linking.openURL('http://localhost')}>
 						<Text style={styles.buttonScrollLabel}>Convidar</Text>
@@ -114,5 +113,5 @@ const styles = StyleSheet.create({
 	},
 	cardLabel: {
 		marginBottom: 20
-	}
+	},
 })

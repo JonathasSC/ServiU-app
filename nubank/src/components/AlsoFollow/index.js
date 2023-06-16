@@ -7,6 +7,7 @@ import {
 } from "react-native";
 
 import { FontAwesome5 } from '@expo/vector-icons';
+import FunctionCard from '../FunctionCard';
 
 
 export default function AlsoFollow() {
@@ -19,17 +20,18 @@ export default function AlsoFollow() {
 		</TouchableOpacity>
 
 		<TouchableOpacity>
-		<View style={styles.containerLabel}>
-			<FontAwesome5 style={styles.assistanceIcon} name="assistive-listening-systems" size={24} color="black" />
-			<Text style={styles.assistanceLabel}>Assistente de
-				<Text style={styles.assistanceLabel}> pagamentos</Text>
-			</Text>
+            <FunctionCard iconName="thumbsup" name="Assistente de pagamentos" status={true}/>
+            <View style={styles.containerLabel}>
+                <FontAwesome5 style={styles.assistanceIcon} name="assistive-listening-systems" size={24} color="black" />
+                <Text style={styles.assistanceLabel}>Assistente de
+                    <Text style={styles.assistanceLabel}> pagamentos</Text>
+                </Text>
 
-			<View style={styles.assistanceNewLabelArea}>
-				<Text style={styles.assistanceNewLabel}>Novo</Text>
-			</View>
-		</View>
-	</TouchableOpacity>
+                <View style={styles.assistanceNewLabelArea}>
+                    <Text style={styles.assistanceNewLabel}>Novo</Text>
+                </View>
+            </View>
+	    </TouchableOpacity>
    </View>
   );
 }

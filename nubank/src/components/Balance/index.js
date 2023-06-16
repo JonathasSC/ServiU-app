@@ -27,12 +27,11 @@ export default function Balance() {
 
 const styles = StyleSheet.create({
 	container: {
-		paddingTop: 5,
-		padding: 20,
+        padding: 20,
+		paddingTop: 0, 
 		backgroundColor: '#fff',
 	},
 	balanceArea: {
-		paddingVertical: 10,
 		flexDirection: 'row'
 	},
 	currencySymbol: {
@@ -46,8 +45,5 @@ const styles = StyleSheet.create({
 	hiddenBar: {
 		backgroundColor: '#dadada',
 		width: 150,
-		height: 10,
-		marginTop: 12,
-		marginHorizontal: 10
 	}
 })

@@ -21,23 +21,28 @@ import ClientSessions from "../../components/ClientSessions";
 import FindOutMore from "../../components/FindOutMore";
 import AlsoFollow from "../../components/AlsoFollow";
 import Footer from "../../components/Footer";
+import TitleAreas from "../../components/TitleAreas";
+import FunctionCard from "../../components/FunctionCard";
 
 export default function Home() {
 	const [showvalue, setShowvalue ] = useState(false);
 	return (
 		<ScrollView>
 			<View style={styles.container}>
-				<StatusBar style="auto"></StatusBar>
-				<Header></Header>
-				<Actions></Actions>
-				<Cards></Cards>
-				<News></News>
-				<CardView></CardView>
-				<InvoiceData></InvoiceData>
-				<AlsoFollow></AlsoFollow>
-				<ClientSessions></ClientSessions>
-				<FindOutMore></FindOutMore>
-				<Footer></Footer>
+				<StatusBar 
+                    style="auto"/>
+				<Header/>
+				<Actions/>
+                <FunctionCard
+                    iconName="credit-card"
+                    name="Meus cartões"/>
+				<News/>
+				<CardView/>
+				<InvoiceData/>
+				<AlsoFollow/>
+				<ClientSessions/>
+				<FindOutMore/>
+				<Footer/>
 			</View>
 		</ScrollView>
  	);

@@ -18,6 +18,9 @@ export default function FunctionCard({iconName, name, status, money, moneyValue}
 		<View style={styles.container}>
 			<Octicons style={styles.cardIcon} name={iconName} size={24} color="black"/>
             <Text style={styles.cardLabel}>{name}</Text>
+
+            <View style={styles.space}/>
+
             { status ? (
                 <View style={styles.statusArea}>
                     <Text style={styles.status}>Novo</Text>
@@ -26,7 +29,7 @@ export default function FunctionCard({iconName, name, status, money, moneyValue}
                 null
             )}
 
-            <View style={styles.space}></View>
+            <View style={styles.space}/>
 
             { money ? (
                 <View style={styles.valueArea}>
@@ -59,16 +62,13 @@ const styles = StyleSheet.create({
 	},
     statusArea: {
 		backgroundColor: '#820ad1',
-		paddingHorizontal: 4,
+		paddingHorizontal: 5,
 		borderRadius: 4,
-		justifyContent: 'center',
-		alignContent: 'center',
-		marginStart: 130,
-		alignItems: 'center'
 	},
 	status: {
 		color: 'white',
 	},
+
     valueArea: {
 		paddingHorizontal: 15,
 		borderRadius: 4,
